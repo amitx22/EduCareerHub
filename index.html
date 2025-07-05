@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduCareerHub - Learn, Grow, Get Hired</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>EduCareerHub</h1>
+    <nav>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Learn Skills. Land Jobs. Build Your Future.</h2>
+    <p>Explore courses, develop skills, and discover job opportunities — all in one place!</p>
+    <a href="#education" class="btn">Get Started</a>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <h2>📚 Education Resources</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Programming Basics</h3>
+        <p>Start learning Python, C++, or Java from scratch.</p>
+        <button class="btn" onclick="openModal('modal1')">Enroll</button>
+      </div>
+      <div class="card">
+        <h3>Competitive Exams</h3>
+        <p>Get study material for SSC, Banking, and UPSC exams.</p>
+        <button class="btn" onclick="openModal('modal2')">View Materials</button>
+      </div>
+      <div class="card">
+        <h3>Math & Science</h3>
+        <p>Explore high-school to college-level concepts.</p>
+        <button class="btn" onclick="openModal('modal3')">Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <h2>🛠 Skill Development</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Communication Skills</h3>
+        <p>Boost your confidence and public speaking ability.</p>
+        <button class="btn" onclick="openModal('modal4')">Start Now</button>
+      </div>
+      <div class="card">
+        <h3>MS Office Tools</h3>
+        <p>Learn Excel, Word, and PowerPoint essentials.</p>
+        <button class="btn" onclick="openModal('modal5')">Learn</button>
+      </div>
+      <div class="card">
+        <h3>Freelancing 101</h3>
+        <p>Know how to start your freelancing career online.</p>
+        <button class="btn" onclick="openModal('modal6')">Join</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs Section -->
+  <section class="section" id="jobs">
+    <h2>💼 Employment Opportunities</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Intern - Web Developer</h3>
+        <p>Location: Remote | Stipend: ₹5,000</p>
+        <button class="btn" onclick="openModal('modal7')">Apply</button>
+      </div>
+      <div class="card">
+        <h3>Data Entry Executive</h3>
+        <p>Location: Kolkata | Salary: ₹15,000</p>
+        <button class="btn" onclick="openModal('modal8')">Apply</button>
+      </div>
+      <div class="card">
+        <h3>Government Job Alerts</h3>
+        <p>Stay updated with the latest govt job openings.</p>
+        <button class="btn" onclick="openModal('modal9')">Check Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2>📞 Contact Us</h2>
+    <p>Email: support@educareerhub.com | Phone: +91-9876543210</p>
+    <p>Follow us: Instagram | LinkedIn | YouTube</p>
+  </section>
+
+  <footer>
+    &copy; 2025 EduCareerHub. All rights reserved.
+  </footer>
+
+  <!-- Modals -->
+  <div id="modal1" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal1')">&times;</span><h3>Programming Basics</h3><p>This course includes Python, C++, Java fundamentals with projects and quizzes.</p></div></div>
+  <div id="modal2" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal2')">&times;</span><h3>Competitive Exams</h3><p>Get detailed PDFs, mock tests, and strategies for SSC, Banking, UPSC.</p></div></div>
+  <div id="modal3" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal3')">&times;</span><h3>Math & Science</h3><p>Explore algebra, geometry, physics, chemistry and more with video tutorials.</p></div></div>
+  <div id="modal4" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal4')">&times;</span><h3>Communication Skills</h3><p>Join live classes, role plays, and get real-time feedback to improve communication.</p></div></div>
+  <div id="modal5" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal5')">&times;</span><h3>MS Office Tools</h3><p>Step-by-step training on Excel formulas, Word formatting, and PowerPoint design.</p></div></div>
+  <div id="modal6" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal6')">&times;</span><h3>Freelancing 101</h3><p>Learn platforms, portfolio creation, pricing tips, and how to get your first gig.</p></div></div>
+  <div id="modal7" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal7')">&times;</span><h3>Web Dev Intern</h3><p>Work on real websites. Learn HTML, CSS, JavaScript. Remote, flexible timings.</p></div></div>
+  <div id="modal8" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal8')">&times;</span><h3>Data Entry Executive</h3><p>Typing speed 35+ WPM required. 6-day work week. Apply with resume.</p></div></div>
+  <div id="modal9" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal9')">&times;</span><h3>Government Job Alerts</h3><p>Get alerts for SSC, UPSC, Railways, Defence jobs with syllabus and dates.</p></div></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
