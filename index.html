@@ -1,10 +1,36 @@
- <!DOCTYPE html>
-<html lang="en">
+  <!**DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EduCareerHub - Learn, Grow, Get Hired</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; }
+    header { background: #343a40; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; }
+    nav a { color: white; margin-left: 1rem; text-decoration: none; }
+    .hero { padding: 3rem 2rem; text-align: center; background: #007bff; color: white; }
+    .section { padding: 2rem; }
+    .cards { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .card { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 250px; text-align: center; }
+    .card h3 { margin-top: 0; }
+    footer { background: #343a40; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .btn { background: #007bff; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block; }
+
+
+    .pdf-link {
+    background-color: #b8a8a2;
+    color: #070707;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-decoration: solid;
+    font-size: medium;
+    text-align: center;
+  }
+  .pdf-link:hover {
+    background-color: #293cb9;
+  }
+  </style>
 </head>
 <body>
   <header>
@@ -15,102 +41,163 @@
       <a href="#jobs">Jobs</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>
-
-  <section class="hero">
+  </header>  <section class="hero">
     <h2>Learn Skills. Land Jobs. Build Your Future.</h2>
     <p>Explore courses, develop skills, and discover job opportunities — all in one place!</p>
     <a href="#education" class="btn">Get Started</a>
-  </section>
-
-  <!-- Education Section -->
-  <section class="section" id="education">
+  </section>  <section class="section" id="education">
     <h2>📚 Education Resources</h2>
     <div class="cards">
       <div class="card">
         <h3>Programming Basics</h3>
         <p>Start learning Python, C++, or Java from scratch.</p>
-        <button class="btn" onclick="openModal('modal1')">Enroll</button>
+        <a href="#" class="btn">Enroll</a>
       </div>
       <div class="card">
         <h3>Competitive Exams</h3>
         <p>Get study material for SSC, Banking, and UPSC exams.</p>
-        <button class="btn" onclick="openModal('modal2')">View Materials</button>
+        <a href="#" class="btn">View Materials</a>
       </div>
       <div class="card">
         <h3>Math & Science</h3>
         <p>Explore high-school to college-level concepts.</p>
-        <button class="btn" onclick="openModal('modal3')">Explore</button>
+        <a href="#" class="btn">Explore</a>
       </div>
     </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="section" id="skills">
+  </section>  <section class="section" id="skills">
     <h2>🛠 Skill Development</h2>
     <div class="cards">
       <div class="card">
         <h3>Communication Skills</h3>
         <p>Boost your confidence and public speaking ability.</p>
-        <button class="btn" onclick="openModal('modal4')">Start Now</button>
+        <a href="#" class="btn">Start Now</a>
       </div>
       <div class="card">
         <h3>MS Office Tools</h3>
         <p>Learn Excel, Word, and PowerPoint essentials.</p>
-        <button class="btn" onclick="openModal('modal5')">Learn</button>
+        <a href="#" class="btn">Learn</a>
+      </div>
+      <div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Enrollment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .enrollment-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .enrollment-form h2 {
+            text-align: center;
+        }
+        .enrollment-form label {
+            display: block;
+            margin-top: 12px;
+        }
+        .enrollment-form input,
+        .enrollment-form select {
+            width: 100%;
+            padding: 7px;
+            margin-top: 4px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+        .enrollment-form button {
+            margin-top: 16px;
+            width: 100%;
+            padding: 10px;
+            background: #2b7cff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .enrollment-form button:hover {
+            background: #1c5ccf;
+        }
+    </style>
+</head>
+<body>
+    <form class="enrollment-form">
+        <h2>Student Enrollment</h2>
+        <label for="studentName">Full Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+        
+        <label for="studentEmail">Email:</label>
+        <input type="email" id="studentEmail" name="studentEmail" required>
+        
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" required>
+        
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="">-- Select Course --</option>
+            <option value="math101">Math 101</option>
+            <option value="physics201">Physics 201</option>
+            <option value="cs150">Computer Science 150</option>
+            <option value="eng101">English 101</option>
+        </select>
+        
+        <label for="semester">Semester:</label>
+        <input type="text" id="semester" name="semester" placeholder="e.g., Fall 2025" required>
+        
+        <button type="submit">Enroll Student</button>
+    </form>
+</body>
+</html>
       </div>
       <div class="card">
         <h3>Freelancing 101</h3>
         <p>Know how to start your freelancing career online.</p>
-        <button class="btn" onclick="openModal('modal6')">Join</button>
+        <a href="#" class="btn">Join</a>
       </div>
     </div>
-  </section>
-
-  <!-- Jobs Section -->
-  <section class="section" id="jobs">
+  </section>  <section class="section" id="jobs">
     <h2>💼 Employment Opportunities</h2>
     <div class="cards">
       <div class="card">
         <h3>Intern - Web Developer</h3>
         <p>Location: Remote | Stipend: ₹5,000</p>
-        <button class="btn" onclick="openModal('modal7')">Apply</button>
+        <a href="#" class="btn">Apply</a>
       </div>
       <div class="card">
         <h3>Data Entry Executive</h3>
         <p>Location: Kolkata | Salary: ₹15,000</p>
-        <button class="btn" onclick="openModal('modal8')">Apply</button>
+        <a href="#" class="btn">Apply</a>
       </div>
       <div class="card">
         <h3>Government Job Alerts</h3>
         <p>Stay updated with the latest govt job openings.</p>
-        <button class="btn" onclick="openModal('modal9')">Check Now</button>
+        <a href="#" class="btn">Check Now</a>
       </div>
     </div>
-  </section>
+    <div>
+      <section class="section" id="notes">
+  <h2>📝 Notes</h2>
+  <p>Download or view study materials in PDF format:</p>
+  <div style="display: flex; justify-content: center; margin-top: 1rem;">
+    <iframe src="https://drive.google.com/file/d/1_NmzI9pbZDs_AIh5mdcKk0Jrc0kDwxdL/view?usp=drivesdk" width="50%" height="200px" style="border: 1px solid #ccc;"></iframe>
+   <br>
+   <br>
+    <a href="DBMS_Full_Notes.pdf"  target="_blank" class="pdf-link"> CLICK to get  Dbms notes</a>
+  </div
+</section>
 
-  <!-- Contact Section -->
-  <section class="section" id="contact">
+    </div>
+  </section>  <section class="section" id="contact">
     <h2>📞 Contact Us</h2>
     <p>Email: support@educareerhub.com | Phone: +91-9876543210</p>
     <p>Follow us: Instagram | LinkedIn | YouTube</p>
-  </section>
-
-  <footer>
+  </section>  <footer>
     &copy; 2025 EduCareerHub. All rights reserved.
   </footer>
-
-  <!-- Modals -->
-  <div id="modal1" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal1')">&times;</span><h3>Programming Basics</h3><p>This course includes Python, C++, Java fundamentals with projects and quizzes.</p></div></div>
-  <div id="modal2" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal2')">&times;</span><h3>Competitive Exams</h3><p>Get detailed PDFs, mock tests, and strategies for SSC, Banking, UPSC.</p></div></div>
-  <div id="modal3" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal3')">&times;</span><h3>Math & Science</h3><p>Explore algebra, geometry, physics, chemistry and more with video tutorials.</p></div></div>
-  <div id="modal4" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal4')">&times;</span><h3>Communication Skills</h3><p>Join live classes, role plays, and get real-time feedback to improve communication.</p></div></div>
-  <div id="modal5" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal5')">&times;</span><h3>MS Office Tools</h3><p>Step-by-step training on Excel formulas, Word formatting, and PowerPoint design.</p></div></div>
-  <div id="modal6" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal6')">&times;</span><h3>Freelancing 101</h3><p>Learn platforms, portfolio creation, pricing tips, and how to get your first gig.</p></div></div>
-  <div id="modal7" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal7')">&times;</span><h3>Web Dev Intern</h3><p>Work on real websites. Learn HTML, CSS, JavaScript. Remote, flexible timings.</p></div></div>
-  <div id="modal8" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal8')">&times;</span><h3>Data Entry Executive</h3><p>Typing speed 35+ WPM required. 6-day work week. Apply with resume.</p></div></div>
-  <div id="modal9" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal9')">&times;</span><h3>Government Job Alerts</h3><p>Get alerts for SSC, UPSC, Railways, Defence jobs with syllabus and dates.</p></div></div>
-
-  <script src="script.js"></script>
 </body>
 </html>
